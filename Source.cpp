@@ -196,10 +196,15 @@ std::string PopularWordNotSyntacic(std::string path)
 	if (file.is_open())
 	{
 
-
+		
 		while (file >> word)// extracting words from the file
 		{
-			if (word == "am" || word == "is" || word == "are" || word == "do" || word == "doesn't" || word == "don't" || word == "the" || word == "that" || word == "does")
+		transform(word.begin(), word.end(), word.begin(), ::tolower);
+		if (word == "am" || word == "is" || word == "are" || word == "do" || word == "doesn't" ||
+			word == "don't" || word == "the" || word == "that" || word == "does" || word == "and" || word == "or"
+			|| word == "of" || word == "to" || word == "a" || word == "as" || word == "in" || word == "his" || word == "he" || word == "she" || word == "it"
+			|| word == "i"||word=="was"||word=="with"||word=="have"||word=="had"||word=="you"||word=="they"||word=="at"
+			||word=="for"||word=="on"||word=="her"||word=="be")
 				continue;
 			it = mp.find(word);//find the word
 
