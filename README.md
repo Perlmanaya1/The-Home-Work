@@ -1,6 +1,9 @@
 # The-Home-Work
 
-the input us the text file is in the directory
+the input is this:
+
+https://github.com/kzjeef/algs4/blob/master/burrowswheelers/testfile/dickens.txt
+מה שנתנו לנו לדוג,,
 
 the output:
 
